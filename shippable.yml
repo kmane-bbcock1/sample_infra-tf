@@ -5,7 +5,6 @@ infra:
     - terraform plan
 
   prov:
-    - terraform destroy
     - terraform apply
 
   post_prov:
