@@ -1,10 +1,10 @@
 language: none
 
 infra:
-	pre_prov:
-    	- terraform plan
-	prov:
-   		- terraform destroy
-   		- terraform apply
-	post_prov:
-    	- terraform plan
+  pre_prov:
+    - terraform plan
+    prov:
+      - terraform destroy
+      - terraform apply
+    post_prov:
+      - terraform plan
