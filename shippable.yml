@@ -2,9 +2,11 @@ language: none
 
 infra:
   pre_prov:
+    - pwd
     - terraform plan
 
   prov:
+    - pwd
     - terraform apply
 
   post_prov:
