@@ -6,7 +6,7 @@ resource "aws_instance" "web" {
 
     connection {
       type = "ssh"
-      user = "ankul"
+      user = "ec2-user"
       key_file = "${var.key_file_name}"
       agent = true
     }
