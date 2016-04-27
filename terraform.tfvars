@@ -1,0 +1,8 @@
+aws_region = "us-west-2"
+aws_access_key = "AKIAJ3K4ZCYHA4M7ZGQQ"
+aws_secret_key = "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"
+instance_type = "m3.medium"
+key_name = "aws-ssh-key"
+key_file_name = "aws-ssh-key.pem"
+instance_name = "terraform-test-instance"
+subnet_id = "subnet-0438095d"
