@@ -6,6 +6,7 @@ infra:
 
   prov:
     - terraform apply -state=/shippableci/shippable/provision/terraform.tfstate
+    - sleep 60
 
   # post_prov:
   #   - yes yes 2>/dev/null | terraform destroy
