@@ -5,7 +5,7 @@ infra:
     - terraform plan
 
   prov:
-    - terraform apply -state=$SHIPPABLE_BUILD_DIR/shippable/provision/terraform.tfstate
+    - terraform apply -state=/shippableci/shippable/provision/terraform.tfstate
 
   # post_prov:
   #   - yes yes 2>/dev/null | terraform destroy
