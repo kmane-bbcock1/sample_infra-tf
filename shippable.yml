@@ -12,10 +12,10 @@ infra:
     - echo "$FOO"
     
   on_success: 
-    - "build is success"
+    - echo "build is success"
     
   on_failure:
-    - "build is failure"
+    - echo "build is failure"
     
  # post_prov:
   #  - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
