@@ -1,4 +1,4 @@
-language: java
+language: go
 
 infra:
   pre_prov:
