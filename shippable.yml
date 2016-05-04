@@ -5,7 +5,7 @@ infra:
     - terraform plan
 
   prov:
-    - terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
+    - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
 
   # post_prov:
   #   - yes yes 2>/dev/null | terraform destroy
