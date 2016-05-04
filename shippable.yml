@@ -3,7 +3,6 @@ language: none
 env:
  global:
    - foo=bar
- matrix: 
    - M1=one
    - M2=two
 
