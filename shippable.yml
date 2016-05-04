@@ -4,6 +4,9 @@ env:
  - M1=one
  - M2=two
 
+addons:
+  - firefox: "27.0"
+  
 infra:
   pre_prov:
     - terraform plan
