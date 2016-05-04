@@ -1,4 +1,4 @@
-language: go
+language: none
 
 infra:
   pre_prov:
