@@ -6,10 +6,6 @@ infra:
 
   prov:
     - terraform apply -state=/shippableci/shippable/provision/terraform.tfstate
-    
-env:  
-  - FOO=BAR
-  - BAR=BOO
 
  # post_prov:
   #  - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
