@@ -1,8 +1,11 @@
 language: none
 
 env:
- - M1=one
- - M2=two
+ global:
+   - foo=bar
+ matrix: 
+   - M1=one
+   - M2=two
 
 addons:
   - firefox: "27.0"
