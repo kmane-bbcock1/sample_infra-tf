@@ -1,5 +1,8 @@
 language: php  
 
+php:
+  - 5.4
+
 infra:
   pre_prov:
     - terraform plan
