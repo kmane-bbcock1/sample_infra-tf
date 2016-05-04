@@ -1,21 +1,34 @@
 language: none
 
+env:
+  - FOO=BAR
+  
 infra:
   pre_prov:
     - terraform plan
 
   prov:
     - terraform apply -state=/shippableci/shippable/provision/terraform.tfstate
-
+    
  # post_prov:
   #  - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
+  
+build:
+  ci:
+    - echo "$FOO"
+    
+  on_success: 
+    - "build is success"
+    
+  on_failure:
+    - "build is failure"
 
 integrations:
   notifications:
     - integrationName: email
       type: email
       recipients:
-        - varsha@shippable.com
+        - shiphitchcock1@gmail.com
       on_success: always
       on_failure: always
       on_start: always
