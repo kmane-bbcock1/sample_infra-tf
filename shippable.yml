@@ -17,8 +17,8 @@ infra:
   on_failure:
     - echo "build is failure"
     
- # post_prov:
-  #  - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
+  post_prov:
+    - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
   
 integrations:
   notifications:
