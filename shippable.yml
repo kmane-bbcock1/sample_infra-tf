@@ -1,4 +1,4 @@
-language: none
+language: node_js
 
 infra:
   pre_prov:
