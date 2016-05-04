@@ -13,6 +13,11 @@ env:
 
  # post_prov:
   #  - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
+  
+build:
+  ci:   
+    - echo "$FOO"
+    - echo "$BAR"
 
 integrations:
   notifications:
