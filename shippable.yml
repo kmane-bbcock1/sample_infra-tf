@@ -9,12 +9,6 @@ infra:
 
   prov:
     - terraform apply -state=/shippableci/shippable/provision/terraform.tfstate
-    
- # post_prov:
-  #  - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
-  
-build:
-  ci:
     - echo "$FOO"
     
   on_success: 
@@ -22,7 +16,10 @@ build:
     
   on_failure:
     - "build is failure"
-
+    
+ # post_prov:
+  #  - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
+  
 integrations:
   notifications:
     - integrationName: email
