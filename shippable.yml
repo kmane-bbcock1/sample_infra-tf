@@ -6,6 +6,7 @@ env:
 
 addons:
   - firefox: "27.0"
+  - selenium: "2.42"
   
 infra:
   pre_prov:
