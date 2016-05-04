@@ -1,4 +1,4 @@
-language: clojure
+language: python
 
 infra:
   pre_prov:
