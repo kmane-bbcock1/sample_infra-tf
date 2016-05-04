@@ -5,10 +5,10 @@ infra:
     - terraform plan
 
   prov:
-    - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
+    - terraform apply -state=/shippableci/shippable/provision/terraform.tfstate
 
   # post_prov:
-  #   - yes yes 2>/dev/null | terraform destroy
+  #   - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
 
 integrations:
   notifications:
