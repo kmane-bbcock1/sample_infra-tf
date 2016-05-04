@@ -1,7 +1,4 @@
-language: php  
-
-php:
-  - 5.4
+language: clojure
 
 infra:
   pre_prov:
