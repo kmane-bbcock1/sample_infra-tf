@@ -15,7 +15,7 @@ integrations:
     - integrationName: email
       type: email
       recipients:
-        - vidya@shippable.com
+        - varsha@shippable.com
       on_success: always
       on_failure: always
       on_start: always
