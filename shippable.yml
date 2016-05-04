@@ -10,6 +10,7 @@ infra:
   prov:
     - terraform apply -state=/shippableci/shippable/provision/terraform.tfstate
     - echo "$FOO"
+    - cs ps
     
   on_success: 
     - echo "build is success"
