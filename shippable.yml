@@ -8,7 +8,7 @@ infra:
 
   prov:
     - echo "running apply"
-    - terraform apply
+    - terraform destroy
 
   on_success:
     - echo "apply successful"
