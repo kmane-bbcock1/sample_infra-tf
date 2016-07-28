@@ -1,6 +1,6 @@
 aws_region = "us-west-2"
-aws_access_key = "AKIAJ3K4ZCYHA4M7ZGQQ"
-aws_secret_key = "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"
+aws_access_key = "AKIAI6CDST2JX7IZLLSQ"
+aws_secret_key = "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"
 instance_type = "m3.medium"
 key_name = "aws-ssh-key"
 key_file_name = "aws-ssh-key.pem"
