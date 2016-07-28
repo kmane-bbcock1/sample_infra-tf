@@ -1,10 +1,10 @@
 language: none
 
 infra:
-  #pre_prov:
+  pre_prov:
     #- cd betaCL
-   # - cp -vr /shippableci/shippable/provision/terraform.tfstate .
-    #- terraform plan
+    - cp -vr /shippableci/shippable/provision/terraform.tfstate .
+    - terraform plan
 
   prov:
     - echo "running apply"
