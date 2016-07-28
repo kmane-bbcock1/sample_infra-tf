@@ -2,21 +2,14 @@ language: none
 
 infra:
   pre_prov:
+    - cd betaCL
+   # - cp -vr /shippableci/shippable/provision/terraform.tfstate .
     - terraform plan
 
   prov:
-    - terraform apply -state=/shippableci/shippable/provision/terraform.tfstate
-   # - cs ps
+    - echo "running apply"
+    - terraform apply
 
-  post_prov:
-    - yes yes 2>/dev/null | terraform destroy -state=/shippableci/shippable/provision/terraform.tfstate
-
-integrations:
-  notifications:
-    - integrationName: email
-      type: email
-      recipients:
-        - varsha@shippable.com
-      on_success: always
-      on_failure: always
-      on_start: always
+  on_success:
+    - echo "apply successful"
+    - cp -fvr terraform.tfstate /shippableci/shippable/provision
